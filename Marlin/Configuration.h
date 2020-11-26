@@ -71,7 +71,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(coolio986)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(MISIS_ASU)" // Who made the changes.
 
 /**
  * *** VENDORS PLEASE READ ***
@@ -133,7 +133,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-//#define CUSTOM_MACHINE_NAME "3D Printer"
+#define CUSTOM_MACHINE_NAME "Negr"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -666,12 +666,12 @@
  */
 #define X_DRIVER_TYPE  TMC2208 // comment out for stock drivers
 #define Y_DRIVER_TYPE  TMC2208 // comment out for stock drivers
-#define Z_DRIVER_TYPE  TMC2208 // comment out for stock drivers
+//#define Z_DRIVER_TYPE  TMC2208 // comment out for stock drivers
 //#define X2_DRIVER_TYPE TMC2208_STANDALONE
 //#define Y2_DRIVER_TYPE TMC2208_STANDALONE
-#define Z2_DRIVER_TYPE TMC2208 // comment out for stock drivers
-#define E0_DRIVER_TYPE TMC2208 // comment out for stock drivers
-#define E1_DRIVER_TYPE TMC2208 // comment out for stock drivers
+//#define Z2_DRIVER_TYPE TMC2208 // comment out for stock drivers
+//#define E0_DRIVER_TYPE TMC2208 // comment out for stock drivers
+//#define E1_DRIVER_TYPE TMC2208 // comment out for stock drivers
 //#define E2_DRIVER_TYPE TMC2208_STANDALONE
 //#define E3_DRIVER_TYPE TMC2208_STANDALONE
 //#define E4_DRIVER_TYPE TMC2208_STANDALONE
@@ -1024,12 +1024,12 @@
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false // set to true for stock drivers or TMC2208 with reversed connectors
 #define INVERT_Y_DIR false // set to true for stock drivers or TMC2208 with reversed connectors
-#define INVERT_Z_DIR false // set to true for stock drivers or TMC2208 with reversed connectors
+#define INVERT_Z_DIR true // set to true for stock drivers or TMC2208 with reversed connectors
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true // set to false for stock drivers or TMC2208 with reversed connectors
+#define INVERT_E0_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
 #define INVERT_E1_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
 #define INVERT_E2_DIR true
 #define INVERT_E3_DIR true
